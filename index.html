@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="index.css">
     <!-- Chosen Palette: Warm Nostalgia -->
     <!-- Application Structure Plan: A single-page, scrolling microsite designed to guide the user through the reunion invitation. It starts with an engaging hero section featuring a countdown to build anticipation. This is followed by the heartfelt invitation letter, a clear visual schedule of events, a nostalgic photo gallery to evoke memories, and finally, a clear call-to-action with an embedded Google Form for RSVP. -->
     <!-- Visualization & Content Choices: 
@@ -17,19 +18,31 @@
         - RSVP Form (Confirmation): Goal: Gather responses. Method: Embedded Google Form. Justification: Leverages a reliable, familiar tool for data collection, simplifying the process for both organizers and attendees.
     -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
-    <style>
+     <style>
         body {
             font-family: 'Quicksand', sans-serif;
         }
+
         h1, h2, h3 {
             font-family: 'Playfair Display', serif;
         }
+
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x1080/a3a3a3/f5f5f5?text=S%C3%A2n+tr%C6%B0%E1%BB%9Dng+th%C3%A2n+y%C3%AAu');
+            /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x1080/a3a3a3/f5f5f5?text=S%C3%A2n+tr%C6%B0%E1%BB%9Dng+th%C3%A2n+y%C3%AAu'); */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/f6ee257040c4c99a90d5.jpg');
             background-size: cover;
             background-position: center;
         }
-    </style>
+
+        /* Ẩn thanh scroll */
+        .no-scrollbar::-webkit-scrollbar {
+        display: none;
+        }
+        .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        }
+     </style>
 </head>
 <body class="bg-stone-100 text-stone-800">
 
@@ -68,11 +81,18 @@
             <p class="text-lg text-center text-stone-600 mb-8">Gửi các bạn 12A1 – Niên khóa 2008–2011</p>
             <div class="text-stone-700 space-y-4 leading-relaxed text-justify">
                 <p>Các bạn thân mến,</p>
-                <p>Thấm thoắt đã gần 15 năm kể từ ngày chúng ta rời mái trường Trần Cao Vân thân yêu – nơi lưu giữ những kỷ niệm trong sáng, hồn nhiên của một thời áo trắng. Dù giờ đây mỗi người một ngã rẽ, có bạn đã ổn định gia đình, có bạn đang theo đuổi sự nghiệp, thì ký ức về những năm tháng học trò vẫn luôn là sợi dây gắn kết chúng ta.</p>
-                <p>Nhân dịp kỷ niệm 70 năm thành lập Trường THPT Trần Cao Vân, chúng mình rất mong 12A1 sẽ có dịp hội ngộ đông đủ – để cùng về thăm lại trường xưa, tri ân thầy cô, ôn chuyện cũ và viết tiếp những kỷ niệm đẹp của tình bạn, tình thầy trò.</p>
-                <p>Mỗi bạn, dù ở đâu hay đang bận rộn thế nào, xin hãy dành chút thời gian trở về – để kết nối, sẻ chia và giữ trọn những gì đẹp nhất của tuổi thanh xuân.</p>
-                <p class="text-center font-semibold mt-6">Hẹn gặp lại thật đông đủ nhé!</p>
-                <p class="text-right font-bold mt-4">Đạt – Đại diện Ban liên lạc lớp 12A1</p>
+                <p>Mới đó mà đã hơn 17 năm kể từ ngày chúng ta gặp nhau dưới mái trường Trần Cao Vân thân yêu - khi ấy, mỗi người chỉ là những cô cậu học trò tuổi mười sáu ngây ngô, vụng dại. Gần 15 năm ngày ra trường, hôm nay khi lật giở lại từng tấm ảnh cũ – gương mặt thân quen, hàng ghế đá, cây phượng góc sân, bảng đen phấn trắng… tất cả như ùa về trong tim, đầy ắp xúc động và hoài niệm.</p>
+                <p>Cuộc sống đã đưa chúng ta rẽ sang những hướng đi khác nhau – nhiều bạn đã xây dựng tổ ấm, nhiều bạn đang bận rộn với công việc, sự nghiệp, cũng có bạn vẫn đang miệt mài theo đuổi những ước mơ còn dang dở. Dù thành công hay bình dị, dù gần hay xa, thì mỗi người đều mang trong tim một phần ký ức về những tháng năm học trò dưới mái trường Trần Cao Vân.</p>
+                <p>Và cũng thật đáng tiếc khi chúng ta có một gương mặt thân thương giờ chỉ còn trong ảnh cũ, trong hồi ức... Chính vì thế, chúng ta càng trân quý hơn cơ hội được gặp lại nhau – để sẻ chia, ôn chuyện cũ, tri ân thầy cô và cùng nhau lưu giữ điều đẹp đẽ nhất: tình bạn và thanh xuân.</p>
+                <p>Nhân dịp kỷ niệm 70 năm thành lập Trường THPT Trần Cao Vân, Ban Liên lạc lớp kêu gọi và mong muốn 12A1 cùng gặp gỡ nhau, như một điểm hẹn thân thương để:</p>
+                <p>Gặp gỡ, ôn chuyện cũ sau gần 15 năm ra Trường</p>
+                <p>Cùng nhau về thăm lại trường xưa – nơi chốn chúng ta từng gắn bó ba năm thanh xuân</p>
+                <p>Bày tỏ lòng biết ơn đến quý thầy cô đã dạy dỗ, dìu dắt</p>
+                <p>Cùng góp một phần nhỏ bé vào ngày hội lớn của Trường, như lời tri ân sâu sắc</p>
+                <p>Mỗi bạn dù ở đâu, làm gì, xin hãy một lần trở về – trở về với tuổi trẻ, với ký ức đẹp đẽ không thể nào quên, với những người bạn từng đồng hành trên chặng đường thanh xuân rực rỡ.</p>
+                <p class="text-center font-semibold mt-6">Chúng mình rất mong được gặp lại các bạn – đông đủ nhất có thể.</p>
+                <p class="text-center font-semibold mt-6">Thân mến và mong hồi âm,</p>
+                <p class="text-right font-bold mt-4">TM. Ban liên lạc lớp 12A1 – NK 2008–2011</p>
             </div>
         </section>
 
@@ -84,43 +104,81 @@
                     <div class="text-3xl text-amber-500">🎉</div>
                     <div>
                         <h3 class="font-bold text-lg">Lễ Kỷ Niệm Trường</h3>
-                        <p class="text-stone-600">Cùng nhau tham dự Lễ kỷ niệm 70 năm thành lập trường.</p>
+                        <p class="text-stone-600">Tham dự Lễ Kỷ niệm 70 năm của Trường (theo lịch chung)</p>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300">
                     <div class="text-3xl text-amber-500">💰</div>
                     <div>
                         <h3 class="font-bold text-lg">Góp Quỹ Tổ Chức</h3>
-                        <p class="text-stone-600">Đóng góp vào quỹ chung để buổi họp mặt thêm trọn vẹn.</p>
-                    </div>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-3xl text-amber-500">🍽️</div>
-                    <div>
-                        <h3 class="font-bold text-lg">Gặp Mặt Lớp 12A1</h3>
-                        <p class="text-stone-600">Check-in, chia sẻ và cùng nhau ăn tối thân mật.</p>
+                        <p class="text-stone-600">Đóng góp vào Quỹ tổ chức Lễ của Trường.</p>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300">
                     <div class="text-3xl text-amber-500">🏫</div>
                     <div>
                         <h3 class="font-bold text-lg">Thăm Trường & Thầy Cô</h3>
-                        <p class="text-stone-600">Trở về lớp học cũ và gửi lời tri ân đến các thầy cô.</p>
+                        <p class="text-stone-600">Thăm lại lớp cũ, tri ân thầy cô.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-3xl text-amber-500">🍽️</div>
+                    <div>
+                        <h3 class="font-bold text-lg">Gặp Mặt Lớp 12A1</h3>
+                        <p class="text-stone-600">Buổi giao lưu – họp lớp 12A1: check-in, trò chuyện, chia sẻ, ăn tối thân mật.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Gallery Section -->
-        <section id="gallery" class="py-16 md:py-24 bg-stone-200 -mx-6 px-6 md:-mx-12 md:px-12">
+        <section id="gallery" class="py-16 md:py-24 bg-stone-200">
             <h2 class="text-3xl font-bold text-center text-amber-700 mb-12">Góc Kỷ Niệm</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="gallery-item"><img src="https://placehold.co/400x400/d4d4d8/3f3f46?text=K%E1%BB%B7+ni%E1%BB%87m+1" alt="Kỷ niệm 1" class="rounded-lg shadow-md cursor-pointer w-full h-full object-cover"></div>
-                <div class="gallery-item"><img src="https://placehold.co/400x400/d4d4d8/3f3f46?text=K%E1%BB%B7+ni%E1%BB%87m+2" alt="Kỷ niệm 2" class="rounded-lg shadow-md cursor-pointer w-full h-full object-cover"></div>
-                <div class="gallery-item"><img src="https://placehold.co/400x400/d4d4d8/3f3f46?text=K%E1%BB%B7+ni%E1%BB%87m+3" alt="Kỷ niệm 3" class="rounded-lg shadow-md cursor-pointer w-full h-full object-cover"></div>
-                <div class="gallery-item"><img src="https://placehold.co/400x400/d4d4d8/3f3f46?text=K%E1%BB%B7+ni%E1%BB%87m+4" alt="Kỷ niệm 4" class="rounded-lg shadow-md cursor-pointer w-full h-full object-cover"></div>
+            <div class="relative px-6 md:px-12">
+                <div id="gallery-scroll"
+                class="gallery-container flex space-x-6 overflow-x-auto scroll-smooth no-scrollbar"
+                >
+                    <!-- Các ảnh -->
+                    <div class="flex-shrink-0 w-80 h-80">
+                        <img src="images/IMG_0468.JPG" class="w-full h-full object-cover rounded-lg shadow-md" />
+                    </div>
+                    <div class="flex-shrink-0 w-80 h-80">
+                        <img src="images/IMG_0469.JPG" class="w-full h-full object-cover rounded-lg shadow-md" />
+                    </div>
+                    <div class="flex-shrink-0 w-80 h-80">
+                        <img src="images/IMG_0476.JPG" class="w-full h-full object-cover rounded-lg shadow-md" />
+                    </div>
+                    <div class="flex-shrink-0 w-80 h-80">
+                        <img src="images/IMG_0471.JPG" class="w-full h-full object-cover rounded-lg shadow-md" />
+                    </div>
+                    <div class="flex-shrink-0 w-80 h-80">
+                        <img src="images/IMG_0472.JPG" class="w-full h-full object-cover rounded-lg shadow-md" />
+                    </div>
+                    <div class="flex-shrink-0 w-80 h-80">
+                        <img src="images/IMG_0473.JPG" class="w-full h-full object-cover rounded-lg shadow-md" />
+                    </div>
+                    <div class="flex-shrink-0 w-80 h-80">
+                        <img src="images/IMG_0474.JPG" class="w-full h-full object-cover rounded-lg shadow-md" />
+                    </div>
+                    <div class="flex-shrink-0 w-80 h-80">
+                        <img src="images/IMG_0475.JPG" class="w-full h-full object-cover rounded-lg shadow-md" />
+                    </div>
+                    <div class="flex-shrink-0 w-80 h-80">
+                        <img src="images/IMG_0477.JPG" class="w-full h-full object-cover rounded-lg shadow-md" />
+                    </div>
+                    <div class="flex-shrink-0 w-80 h-80">
+                        <img src="images/IMG_0478.JPG" class="w-full h-full object-cover rounded-lg shadow-md" />
+                    </div>
+                    <div class="flex-shrink-0 w-80 h-80">
+                        <img src="images/IMG_0479.JPG" class="w-full h-full object-cover rounded-lg shadow-md" />
+                    </div>
+                    <div class="flex-shrink-0 w-80 h-80">
+                        <img src="images/IMG_0480.JPG" class="w-full h-full object-cover rounded-lg shadow-md" />
+                    </div>
+                </div>
             </div>
         </section>
+
 
         <!-- RSVP Section with Google Form -->
         <section id="rsvp" class="py-16 md:py-24">
@@ -132,7 +190,7 @@
                 <div class="bg-white p-2 sm:p-4 rounded-lg shadow-lg overflow-hidden">
                      <!-- HƯỚNG DẪN: Thay thế `src` dưới đây bằng link nhúng Google Form của bạn -->
                      <!-- CÁCH LẤY LINK: Mở Form -> Nút "Gửi" -> Chọn tab < > (Nhúng HTML) -> Sao chép mã HTML và thay thế toàn bộ thẻ <iframe> bên dưới -->
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8LLNmNzVVfZXZIpsxG1YFFgnj4IWkrj4tG6bKI-Nrp8c44Q/viewform?usp=dialog" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSehZl_ydS2oorvz7-eWEQRvI6rkXrpAK63kufNNvKpnHHY88g/viewform" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
                 </div>
                 <!-- Google Form Embed End -->
             </div>
@@ -180,12 +238,6 @@
                 document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
             }, 1000);
 
-            // Smooth scrolling for RSVP button
-            document.querySelector('a[href="#rsvp"]').addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector('#rsvp').scrollIntoView({ behavior: 'smooth' });
-            });
-
             // Image Gallery Modal
             const modal = document.getElementById('image-modal');
             const modalImage = document.getElementById('modal-image');
@@ -209,6 +261,56 @@
                 }
             });
 
+            const gallery = document.getElementById('gallery-scroll');
+
+            gallery.addEventListener('wheel', function (e) {
+            if (e.deltaY !== 0) {
+                e.preventDefault();
+                gallery.scrollLeft += e.deltaY;
+            }
+            });
+
+            let currentIndex = 0;
+            const itemWidth = 320 + 24; // 320px (w-80) + 24px (space-x-6)
+            const itemsPerStep = 4;
+            const scrollStep = itemWidth * itemsPerStep;
+            const maxScrollLeft = gallery.scrollWidth - gallery.clientWidth;
+
+            function autoScrollGallery() {
+            currentIndex++;
+            const nextScrollLeft = scrollStep * currentIndex;
+
+            if (nextScrollLeft >= maxScrollLeft) {
+                currentIndex = 0;
+                smoothScrollTo(gallery, 0, 1000); // scroll về đầu chậm trong 1s
+            } else {
+                smoothScrollTo(gallery, nextScrollLeft, 1000); // scroll 4 ảnh trong 1s
+            }
+            }
+
+            // Auto scroll every 10 seconds
+            setInterval(autoScrollGallery, 5000);
+
+            // Hàm scroll mượt có kiểm soát tốc độ
+            function smoothScrollTo(element, target, duration) {
+                const start = element.scrollLeft;
+                const change = target - start;
+                const startTime = performance.now();
+
+                function animateScroll(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    element.scrollLeft = start + change * easeInOutQuad(progress);
+                    if (progress < 1) requestAnimationFrame(animateScroll);
+                }
+
+                requestAnimationFrame(animateScroll);
+            }
+
+            // Hàm easing: mượt mà lúc đầu và kết thúc
+            function easeInOutQuad(t) {
+                return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+            }
             // No custom RSVP form script needed anymore
         });
     </script>
